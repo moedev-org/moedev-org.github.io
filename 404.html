@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="5; URL=https://moedev.org/"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <meta name="description" content="moedev.org is a tiny site to list all the exciting knowledge I want to share with the world :)">
+    <meta name="author" content="MOEDEV">
+    <title>404 - Page Not Found - MOEDEV</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div style="text-align: center">
+<p>404 - Page Not Found</p>
+<p>Redirect to <a href="https://moedev.org/">moedev.org</a> in <b id="counter">5</b> s</p>
+</div>
+<script>
+setInterval(function() {
+  let div = document.querySelector("#counter");
+  let count = div.textContent - 1;
+  div.textContent = count;
+  if (count <= 0) {
+    window.location = "https://moedev.org/";
+  }
+}, 1000);
+</script>
+</body>
+</html>
